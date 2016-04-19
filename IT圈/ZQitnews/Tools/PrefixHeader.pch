@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  IT圈
+//
+//  Created by 云志强 on 16/2/29.
+//  Copyright © 2016年 云志强. All rights reserved.
+//
+
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define kNews @"http://api.ithome.com/xml/newslist/news.xml"           //最新
+#define kNewspic @"http://api.ithome.com/xml/slide/slide.xml"          //最新图
+#define kPhone @"http://api.ithome.com/xml/newslist/phone.xml"         //手机
+#define kPhonepic @"http://api.ithome.com/xml/slide/phone.xml"         //手机图
+#define kIos @"http://api.ithome.com/xml/newslist/ios.xml"             //苹果
+#define kIospic @"http://api.ithome.com/xml/slide/ios.xml"             //苹果图
+#define kDigi @"http://api.ithome.com/xml/newslist/digi.xml"           //数码
+#define kDigipic @"http://api.ithome.com/xml/slide/digi.xml"           //数码图
+#define kWp @"http://api.ithome.com/xml/newslist/wp.xml"               //WP
+#define kWppic @"http://api.ithome.com/xml/slide/wp.xml"               //WP图
+#define kAndroid @"http://api.ithome.com/xml/newslist/android.xml"     //安卓
+#define kAndroidpic @"http://api.ithome.com/xml/slide/android.xml"     //安卓图
+#define kWindows @"http://api.ithome.com/xml/newslist/windows.xml"     //Windows
+#define kWindowspic @"http://api.ithome.com/xml/slide/windows.xml"     //Windows 图
+#define kWeb @"http://wap.ithome.com/"                                 //渣到爆的WebView网页
+
+#define kWeiboOauth @"https://api.weibo.com/oauth2/authorize?client_id=2382719271&redirect_uri=https://api.weibo.com/oauth2/default.html"  //微博授权回调(没鸡毛用)
+
+//网易垃圾段子
+#define k20Url @"http://c.3g.163.com/recommend/getChanRecomNews?channel=duanzi&size=20"
+#define k10Url @"http://c.3g.163.com/recommend/getChanRecomNews?channel=duanzi&size=10"
+
+
+ //http://api.ithome.com/xml/newscontent/208/608.xml                搞不定的 xml 内容接口
+
+
+//备用
+//#define k20Url @"http://c.3g.163.com/recommend/getChanRecomNews?channel=duanzi&passport=&devId=9bnFpBsalmRrLmMsw2BIdUrmmSH7n5wg9Yh0UnE9zqlEW7TuV46uqc1gh9Lc3XHa&size=20&version=5.5.3&spever=false&net=wifi&lat=L2SndBAfikqOKbNZ5bDptQ%3D%3D&lon=5sSByYgPEshpa5ATEFc42A%3D%3D&ts=1457090992&sign=T8vtRb%2Bw0ss4uokoohAYbbUlCFJ6aZpBduBWb7qvA%2Bh48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=appstore"
+//#define k10Url @"http://c.3g.163.com/recommend/getChanRecomNews?channel=duanzi&passport=&devId=9bnFpBsalmRrLmMsw2BIdUrmmSH7n5wg9Yh0UnE9zqlEW7TuV46uqc1gh9Lc3XHa&size=10&version=5.5.3&spever=false&net=wifi&lat=L2SndBAfikqOKbNZ5bDptQ%3D%3D&lon=5sSByYgPEshpa5ATEFc42A%3D%3D&ts=1457090992&sign=T8vtRb%2Bw0ss4uokoohAYbbUlCFJ6aZpBduBWb7qvA%2Bh48ErR02zJ6%2FKXOnxX046I&encryption=1&canal=appstore"
+
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) do {fprintf(stderr,"%s [line %d] %s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);} while(0)
+#else
+#define NSLog(...)
+#endif

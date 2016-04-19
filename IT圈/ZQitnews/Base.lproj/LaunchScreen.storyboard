@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch2" translatesAutoresizingMaskIntoConstraints="NO" id="FnC-oM-V97">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FnC-oM-V97" secondAttribute="trailing" id="2Td-cJ-wG0"/>
+                            <constraint firstItem="FnC-oM-V97" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2wp-H9-jq5"/>
+                            <constraint firstItem="FnC-oM-V97" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3IG-fS-yvT"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="FnC-oM-V97" secondAttribute="bottom" id="9CB-BF-AgB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FnC-oM-V97"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9CB-BF-AgB"/>
+                                <exclude reference="2Td-cJ-wG0"/>
+                                <exclude reference="2wp-H9-jq5"/>
+                                <exclude reference="3IG-fS-yvT"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FnC-oM-V97"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9CB-BF-AgB"/>
+                                <include reference="2Td-cJ-wG0"/>
+                                <include reference="2wp-H9-jq5"/>
+                                <include reference="3IG-fS-yvT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch2" width="640" height="1136"/>
+    </resources>
+</document>
